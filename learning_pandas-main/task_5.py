@@ -15,7 +15,7 @@ penguins = sns.load_dataset("penguins")
 penguins.head()
 """
 
-from seaborn import  load_dataset, scatterplot, PairGrid
+from seaborn import  load_dataset, scatterplot, PairGrid, heatmap
 from matplotlib.pyplot import show
 data = load_dataset('penguins')
 
@@ -27,6 +27,9 @@ data = load_dataset('penguins')
 # y_vars = ['sex']
 # g = PairGrid(data, x_vars=x_vars, y_vars=y_vars, hue='species')
 # g.map(scatterplot)
+
+penguins = data.pivot_table(index='species', columns='island', values='body_mass_g')
+heatmap(penguins)
 
 
 show()
