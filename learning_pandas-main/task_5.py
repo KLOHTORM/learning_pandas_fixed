@@ -15,11 +15,18 @@ penguins = sns.load_dataset("penguins")
 penguins.head()
 """
 
-from seaborn import  load_dataset, scatterplot
+from seaborn import  load_dataset, scatterplot, PairGrid
 from matplotlib.pyplot import show
 data = load_dataset('penguins')
 
 #1. scatterplot(data=data, x='flipper_length_mm', y='body_mass_g')
-scatterplot(data=data, x='flipper_length_mm', y='body_mass_g', hue='sex', size='island', style='island')
+#2. scatterplot(data=data, x='flipper_length_mm', y='body_mass_g', hue='sex', size='island', style='island')
+
+#3.
+#x_vars = ['body_mass_g', 'bill_length_mm', 'bill_depth_mm', 'flipper_length_mm']
+# y_vars = ['sex']
+# g = PairGrid(data, x_vars=x_vars, y_vars=y_vars, hue='species')
+# g.map(scatterplot)
+
 
 show()
