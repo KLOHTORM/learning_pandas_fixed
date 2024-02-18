@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaa3413e-d5ef-47aa-b687-51ec43ee4b3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/learning_pandas-main/penguins.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learning_pandas-main/task_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning_pandas-main/task_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning_pandas-main/task_5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +37,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.task_4.executor": "Run",
+    "Python.task_5.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"

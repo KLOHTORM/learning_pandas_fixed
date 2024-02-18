@@ -19,7 +19,7 @@ from seaborn import  load_dataset, scatterplot
 from matplotlib.pyplot import show
 data = load_dataset('penguins')
 
-scatterplot(data=data, x='flipper_length_mm', y='body_mass_g')
-
+#1. scatterplot(data=data, x='flipper_length_mm', y='body_mass_g')
+scatterplot(data=data, x='flipper_length_mm', y='body_mass_g', hue='sex', size='island', style='island')
 
 show()
