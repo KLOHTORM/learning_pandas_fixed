@@ -16,6 +16,7 @@ data = read_csv("california_housing_test.csv")
 
 #1. scatterplot(data=data, x='households', y='population')
 #2. relplot(data=data, x='longitude', y='median_house_value', kind='line')
-histplot(data=data, x='housing_median_age')
+#3. histplot(data=data, x='housing_median_age')
+histplot(data=data, x='median_house_value', hue='housing_median_age')
 
 show()
