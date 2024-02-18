@@ -9,12 +9,13 @@ median_house_value, используя линейный график
 """
 
 from pandas import read_csv
-from seaborn import scatterplot, relplot
+from seaborn import scatterplot, relplot, histplot
 from matplotlib.pyplot import show
 
 data = read_csv("california_housing_test.csv")
 
-#scatterplot(data=data, x='households', y='population')
-relplot(data=data, x='longitude', y='median_house_value', kind='line')
+#1. scatterplot(data=data, x='households', y='population')
+#2. relplot(data=data, x='longitude', y='median_house_value', kind='line')
+histplot(data=data, x='housing_median_age')
 
 show()
